@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import Link from 'next/link';
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,44 +23,44 @@ const NavBar = () => {
           
             <ul className="flex items-center hidden space-x-8 lg:flex">
               <li>
-                <a
+                <Link
                   href="/"
                   aria-label="Our Home"
                   title="Our Home"
                   className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/courses"
                   aria-label="Courses"
                   title="Courses"
                   className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
                   Courses
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/about"
                   aria-label="About Us"
                   title="About Us"
                   className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
                  About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/contactus"
                   aria-label="Contact us"
                   title="Contact us"
                   className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -112,45 +113,45 @@ const NavBar = () => {
                   <nav>
                     <ul className="space-y-4">
                       <li>
-                        <a
+                        <Link
                           href="/"
                           aria-label="Home"
                           title="Home"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Home
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href="/courses"
                           aria-label="courses"
                           title="courses"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Courses
-                        </a>
+                        </Link>
                       </li>
                      
                       <li>
-                        <a
+                        <Link
                           href="/about"
                           aria-label="About us"
                           title="About us"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           About us
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href="/contactus"
                           aria-label="Contact Us"
                           title="Contact Us"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Contact Us
-                        </a>
+                        </Link>
                       </li>
                      
                     </ul>

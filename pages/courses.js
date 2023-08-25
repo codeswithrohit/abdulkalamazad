@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image';
 const courses = () => {
   return (
     <div class="flex items-center justify-center flex-col   min-h-screen">
