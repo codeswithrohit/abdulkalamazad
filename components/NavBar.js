@@ -25,8 +25,6 @@ const NavBar = () => {
               <li>
                 <Link
                   href="/"
-                  aria-label="Our Home"
-                  title="Our Home"
                   className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
                   Home
@@ -35,8 +33,6 @@ const NavBar = () => {
               <li>
                 <Link
                   href="/courses"
-                  aria-label="Courses"
-                  title="Courses"
                   className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
                   Courses
@@ -45,8 +41,6 @@ const NavBar = () => {
               <li>
                 <Link
                   href="/about"
-                  aria-label="About Us"
-                  title="About Us"
                   className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
                  About Us
@@ -55,8 +49,6 @@ const NavBar = () => {
               <li>
                 <Link
                   href="/contactus"
-                  aria-label="Contact us"
-                  title="Contact us"
                   className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
                   Contact Us
@@ -115,8 +107,6 @@ const NavBar = () => {
                       <li>
                         <Link
                           href="/"
-                          aria-label="Home"
-                          title="Home"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Home
@@ -125,8 +115,6 @@ const NavBar = () => {
                       <li>
                         <Link
                           href="/courses"
-                          aria-label="courses"
-                          title="courses"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Courses
@@ -136,8 +124,6 @@ const NavBar = () => {
                       <li>
                         <Link
                           href="/about"
-                          aria-label="About us"
-                          title="About us"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           About us
@@ -146,8 +132,6 @@ const NavBar = () => {
                       <li>
                         <Link
                           href="/contactus"
-                          aria-label="Contact Us"
-                          title="Contact Us"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Contact Us
