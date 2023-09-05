@@ -3,8 +3,11 @@ import Link from 'next/link';
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const closeMenu = () => {
+      setIsMenuOpen(false);
+    };
   return (
-    <div className="bg-gray-700">
+    <div className="bg-gray-700 w-full">
       <div className=" px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
         <div className='flex flex-col text-white md:text-center'>
@@ -36,6 +39,14 @@ const NavBar = () => {
                   className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
                   Courses
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/gallery"
+                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                >
+                  Gallery
                 </Link>
               </li>
               <li>
@@ -106,6 +117,7 @@ const NavBar = () => {
                     <ul className="space-y-4">
                       <li>
                         <Link
+                        onClick={closeMenu}
                           href="/"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
@@ -114,15 +126,26 @@ const NavBar = () => {
                       </li>
                       <li>
                         <Link
+                        onClick={closeMenu}
                           href="/courses"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Courses
                         </Link>
                       </li>
+                      <li>
+                        <Link
+                        onClick={closeMenu}
+                          href="/gallery"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                          Gallery
+                        </Link>
+                      </li>
                      
                       <li>
                         <Link
+                        onClick={closeMenu}
                           href="/about"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
@@ -131,6 +154,7 @@ const NavBar = () => {
                       </li>
                       <li>
                         <Link
+                        onClick={closeMenu}
                           href="/contactus"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >

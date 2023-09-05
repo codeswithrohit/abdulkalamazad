@@ -1,11 +1,35 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import Image from 'next/image';
 
 const index = () => {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const images = [
+        'apj1.jpg',
+        'apj2.jpg',
+        'apj3.jpg',
+        'apj4.jpg',
+        'apj5.jpg',
+        'apj6.jpg',
+        'apj7.jpg',
+        'apj8.jpg',
+        'apj9.jpg',
+        'apj10.jpg',
+      ];
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      }, 5000); // Change image every 5 seconds (adjust as needed)
+  
+      return () => {
+        clearInterval(interval);
+      };
+    }, [images]);
+  
+    const currentImage = images[currentImageIndex];
   return (
-    <div className='min-h-screen '>
-      <header className="">
-        <div className="lg:flex">
+    <div className='min-h-screen w-full '>
+        <div className="lg:flex px-5 py-5 ">
           <div className="flex items-center justify-center w-full px-6 py-8 lg:h-[32rem] lg:w-1/2">
             <div className="max-w-xl">
               <h2 className="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl">Welcome To</h2>
@@ -17,18 +41,24 @@ const index = () => {
             </div>
           </div>
           <div className="w-full h-64 lg:w-1/2 lg:h-auto">
-            <div className="w-full h-full bg-cover" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1508394522741-82ac9c15ba69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=748&q=80)' }}>
-              <div className="w-full h-full bg-black opacity-25"></div>
-            </div>
-          </div>
+      <div
+        className="w-full h-full rounded-xl"
+        style={{
+          backgroundImage: `url(${currentImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="w-full h-full bg-black opacity-25"></div>
+      </div>
+    </div>
         </div>
-      </header>
-      <div class="flex items-center justify-center flex-col   min-h-screen">
+      <div class="flex items-center justify-center flex-col  ">
       
-      <div class=" p-10 rounded-xl">
+      <div class="  rounded-xl">
       
           <div class="flex flex-col justify-center items-center text-center">
-              <div class="max-w-sm font-bold font-sans">
+              <div class="max-w-sm font-bold font-sans mt-5">
               Select from B.A, B.Sc, B.Com and Beyond
               </div>
               

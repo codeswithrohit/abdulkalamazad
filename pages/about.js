@@ -23,7 +23,7 @@ const AboutUs = () => {
         </div>
         <div className="lg:w-1/2 mt-10 lg:mt-0">
           <img
-            src="https://thumbs.dreamstime.com/b/university-ground-vintage-building-bright-blue-sky-morning-low-angle-image-taken-patna-college-bihar-india-apr-246241233.jpg"
+            src="apj10.jpg"
             alt="College Campus"
             className="rounded-lg shadow-lg"
           />
